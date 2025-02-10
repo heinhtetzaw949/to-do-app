@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Primary Meta Tags -->
+<title>List Builder To Do App</title>
+<meta name="title" content="List Builder To Do App" />
+<meta name="description" content="Min Ga Lar PAr" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://metatags.io/" />
+<meta property="og:title" content="List Builder To Do App" />
+<meta property="og:description" content="Min Ga Lar PAr" />
+<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://metatags.io/" />
+<meta property="twitter:title" content="List Builder To Do App" />
+<meta property="twitter:description" content="Min Ga Lar PAr" />
+<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+<!-- Meta Tags Generated with https://metatags.io -->
+
+</head>
+<body class="bg-slate-400">
+    
+
+    
+        <div class="bg-slate-300 w-[400px] p-5 mx-auto mt-32">
+            <h1 class="text-3xl font-bold font-sans text-left mb-2">List Builder</h1>
+            <div class="flex">
+                <input type="text" id="taskInput" class="border-2 border-slate-950 w-full py-2 ps-1 focus-visible:outline-none" autofocus>
+                <button class="bg-slate-950 px-3 py-1 cursor-pointer" id="addTaskBtn">
+                    <i class="fa-solid fa-plus text-slate-200 "></i>
+                </button>
+             </div>  
+             <div class="flex justify-between mt-2">
+                <p class="font-mono font-bold text-sm">Your List</p>
+                <div class="bg-slate-950 rounded-full px-4  text-slate-200">
+                   <span id="updateTask">0</span>
+                   <span>/</span>
+                   <span id="doneTask">0</span>
+                </div>
+            </div>
+          
+            <div id="listGroup">
+              <div class="hidden last:block">
+                <div class="flex flex-col align-middle items-center justify-center mt-4 ">
+                    <img src="./src/img/undraw_no-data_ig65.svg" class="w-[150px]" alt="">
+                    <p class="text-sm font-bold mt-2">There is no List</p>
+                </div>
+
+              </div>
+             
+              
+            </div>
+
+           
+        </div>
+
+        <section class="text-center mt-2 ">
+            <button class="cursor-pointer bg-slate-950 text-stone-300 px-4 py-2 rounded" id="deleteAllList">Delete All</button>
+            <button class="cursor-pointer bg-slate-600 text-stone-300 px-4 py-2 rounded" id="doneAllList">Done All</button>
+        </section>
+
+       
+     
+          
+        
+    
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+</html>
